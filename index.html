@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad / Privacy Policy — Snake Evolution (Culebrita) | Ponce App Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00C853;
+      --primary-dark: #1B5E20;
+      --accent: #FFD700;
+      --bg: #0B1911;
+      --card-bg: #FFFFFF;
+      --text: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --success: #00C853;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top, #133321 0%, #07120B 100%);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+      border: 2px solid rgba(0, 230, 118, 0.35);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #007E33 0%, #004D1A 50%, #082912 100%);
+      color: white;
+      padding: 48px 40px 36px;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 215, 0, 0.2);
+      border: 1px solid rgba(255, 215, 0, 0.6);
+      color: #FFD700;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: 'Fredoka', cursive, sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+      color: #FFFFFF;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      opacity: 0.92;
+      max-width: 640px;
+      margin: 0 auto 22px;
+      color: #E8F5E9;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 4px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      gap: 6px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: #00E676;
+      color: #052610;
+      box-shadow: 0 2px 10px rgba(0, 230, 118, 0.4);
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: #F1F5F9;
+      padding: 16px 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-bar strong {
+      color: var(--text);
+    }
+
+    .content {
+      padding: 40px;
+    }
+
+    h2 {
+      font-family: 'Fredoka', cursive, sans-serif;
+      color: var(--primary-dark);
+      font-size: 23px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p, ul {
+      margin-bottom: 16px;
+      color: #334155;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .callout {
+      background: #F0FDF4;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: #F8FAFC;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .footer {
+      background: #F8FAFC;
+      border-top: 1px solid var(--border);
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 16px 12px; }
+      .header { padding: 32px 20px; }
+      .title { font-size: 28px; }
+      .content { padding: 24px 20px; }
+      .meta-bar { padding: 14px 20px; font-size: 12px; }
+      .footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <span class="badge">🐍 Política de Privacidad Oficial / Official Privacy Policy</span>
+      <h1 class="title">Snake Evolution (Culebrita)</h1>
+      <p class="subtitle" id="header-sub">Transparencia y protección de datos para Google Play Store</p>
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-es" onclick="setLang('es')">🇪🇸 Español</button>
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇺🇸 English</button>
+      </div>
+    </div>
+
+    <div class="meta-bar">
+      <div><strong>Desarrollador / Developer:</strong> Ponce App Studios</div>
+      <div><strong>Package ID:</strong> <code>com.poncestudios.culebrita</code></div>
+      <div><strong>Actualización / Updated:</strong> Noviembre 2026</div>
+    </div>
+
+    <!-- SECCIÓN EN ESPAÑOL -->
+    <div class="content" id="content-es">
+      <h2>1. Introducción y Compromiso de Privacidad</h2>
+      <p>En <strong>Ponce App Studios</strong>, respetamos y protegemos la privacidad de nuestros jugadores. <strong>Snake Evolution (Culebrita)</strong> (paquete <code>com.poncestudios.culebrita</code>) es un videojuego arcade de acción y aventura para Android que incluye Modo Aventura de 30 niveles con jefes finales, Modo Clásico, Modo Versus, Contrarreloj, Supervivencia y un Álbum Enciclopédico de 100 especies de serpientes.</p>
+
+      <div class="callout">
+        <strong>Cumplimiento Normativo:</strong><br>
+        Esta política cumple estrictamente con los requisitos de <strong>Seguridad de los Datos de Google Play</strong>, el <strong>RGPD / GDPR</strong> europeo y la normativa <strong>COPPA</strong> de protección infantil en línea.
+      </div>
+
+      <h2>2. No Recopilación de Información Personal</h2>
+      <p><strong>Snake Evolution NO solicita, NO recopila, NO almacena en servidores propios ni comparte información de identificación personal (PII) de los usuarios.</strong></p>
+      <ul>
+        <li><strong>Sin cuentas ni registros:</strong> No se solicita nombre, correo electrónico, número de teléfono ni vinculación con redes sociales para jugar.</li>
+        <li><strong>Sin acceso a permisos sensibles:</strong> La aplicación jamás accede a la cámara, micrófono, contactos, fotos ni ubicación GPS precisa del dispositivo.</li>
+        <li><strong>Sin salas de chat:</strong> No existen funciones de mensajería ni comunicación entre usuarios.</li>
+      </ul>
+
+      <h2>3. Almacenamiento 100% Local en el Dispositivo</h2>
+      <p>Todo el progreso del jugador se guarda de forma local y aislada dentro del propio teléfono o tablet mediante <strong>Android Jetpack DataStore</strong>:</p>
+      <ul>
+        <li>Puntuaciones máximas (<em>High Scores</em>) y estadísticas de partida en cada modo de juego.</li>
+        <li>Progreso en los 30 niveles del Modo Aventura y estrellas desbloqueadas.</li>
+        <li>Monedas/cristales obtenidos, regalo diario y misiones completadas.</li>
+        <li>Aspectos de serpiente (<em>Skins</em>), escenarios de batalla y serpientes desbloqueadas en el Álbum de 100 especies.</li>
+        <li>Ajustes de idioma (Español/Inglés), música, efectos de sonido, vibración, velocidad y controles.</li>
+      </ul>
+      <p><em>Ninguno de estos datos sale de tu dispositivo. Si desinstalas la aplicación o borras sus datos desde los ajustes de Android, se eliminan por completo.</em></p>
+
+      <h2>4. Permisos Técnicos Utilizados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Permiso Android</th>
+            <th>Finalidad Técnica</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>android.permission.INTERNET</code></td>
+            <td>Requerido únicamente para cargar anuncios a través del SDK oficial de Google AdMob.</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+            <td>Verifica si existe conexión a Internet activa antes de realizar peticiones de anuncios.</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.VIBRATE</code></td>
+            <td>Proporciona vibración háptica en colisiones, potenciadores y jefes (desactivable en Ajustes).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>5. Publicidad y Servicios de Terceros (Google AdMob)</h2>
+      <p>Para ofrecer el juego de forma gratuita, <strong>Snake Evolution</strong> utiliza el <strong>SDK Next-Gen de Google Mobile Ads (AdMob)</strong> para mostrar banners, anuncios nativos en la tienda, intersticiales entre partidas y videos recompensados opcionales (por ejemplo, para duplicar el regalo diario o revivir con una vida adicional).</p>
+      <ul>
+        <li>El SDK de Google AdMob puede procesar identificadores técnicos estándar (como el ID de publicidad de Android, datos de diagnóstico e interacciones con anuncios) para mostrar anuncios y prevenir fraudes.</li>
+        <li>El usuario puede restablecer o borrar su ID de publicidad desde <strong>Ajustes de Android → Google → Anuncios</strong>.</li>
+        <li>Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a> para más detalles.</li>
+      </ul>
+
+      <h2>6. Privacidad de Menores</h2>
+      <p>Snake Evolution es apto para todo público y no recopila datos personales de menores de edad. Si un padre o tutor tiene cualquier consulta sobre la privacidad, puede escribirnos directamente a nuestro correo de soporte.</p>
+
+      <h2>7. Control del Usuario y Eliminación de Datos</h2>
+      <ul>
+        <li>Puedes personalizar o silenciar el audio y la vibración en cualquier momento desde la pantalla de <strong>Ajustes</strong> del juego.</li>
+        <li>Puedes eliminar todos los datos locales guardados desinstalando la aplicación o desde <strong>Ajustes de Android → Aplicaciones → Snake Evolution → Almacenamiento → Borrar datos</strong>.</li>
+      </ul>
+
+      <h2>8. Contacto</h2>
+      <div class="callout">
+        <strong>Ponce App Studios</strong><br>
+        📧 Correo de contacto: <a href="mailto:ponceappstudios@gmail.com">ponceappstudios@gmail.com</a><br>
+        📦 Paquete: <code>com.poncestudios.culebrita</code><br>
+        📍 Lima, Perú
+      </div>
+    </div>
+
+    <!-- ENGLISH SECTION -->
+    <div class="content hidden" id="content-en">
+      <h2>1. Introduction & Privacy Commitment</h2>
+      <p>At <strong>Ponce App Studios</strong>, we respect and protect the privacy of our players. <strong>Snake Evolution (Culebrita)</strong> (package <code>com.poncestudios.culebrita</code>) is an action-adventure arcade mobile game for Android featuring a 30-level Adventure Mode with boss fights, Classic Mode, Versus Mode, Time Attack, Survival Mode, and a 100-species Snake Album Encyclopedia.</p>
+
+      <div class="callout">
+        <strong>Regulatory Compliance:</strong><br>
+        This policy strictly complies with <strong>Google Play Data Safety</strong> requirements, the European <strong>GDPR</strong>, and the <strong>COPPA</strong> children's online privacy regulations.
+      </div>
+
+      <h2>2. No Collection of Personal Information</h2>
+      <p><strong>Snake Evolution does NOT request, collect, store on external servers, or share any Personally Identifiable Information (PII) from users.</strong></p>
+      <ul>
+        <li><strong>No accounts or sign-ups:</strong> You never need to provide your name, email address, phone number, or social media accounts to play.</li>
+        <li><strong>No sensitive permissions:</strong> The app never accesses your camera, microphone, contacts, photo gallery, or GPS location.</li>
+        <li><strong>No chat or social features:</strong> There are no chat rooms or user-to-user messaging features.</li>
+      </ul>
+
+      <h2>3. 100% Local On-Device Storage</h2>
+      <p>All game progression is stored exclusively locally on your own Android device using <strong>Android Jetpack DataStore</strong>:</p>
+      <ul>
+        <li>High scores and gameplay statistics across all game modes.</li>
+        <li>Progress across the 30 Adventure Mode levels and earned stars.</li>
+        <li>Collected coins/crystals, daily gift claims, and completed missions.</li>
+        <li>Unlocked snake skins, battle arenas, and species in the 100-Species Snake Album.</li>
+        <li>User settings: language (Spanish/English), music, sound effects, vibration, snake speed, and control type.</li>
+      </ul>
+      <p><em>None of this gameplay data leaves your device. Uninstalling the app or clearing app storage in Android Settings permanently deletes all local data.</em></p>
+
+      <h2>4. App Permissions</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Android Permission</th>
+            <th>Technical Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>android.permission.INTERNET</code></td>
+            <td>Required solely to request and load ads via the official Google AdMob SDK.</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+            <td>Checks whether an active network connection is available before requesting ads.</td>
+          </tr>
+          <tr>
+            <td><code>android.permission.VIBRATE</code></td>
+            <td>Provides haptic vibration feedback during gameplay (can be toggled off in Settings).</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>5. Advertising & Third-Party Services (Google AdMob)</h2>
+      <p>To keep <strong>Snake Evolution</strong> free to play, the game integrates the <strong>Google Mobile Ads Next-Gen SDK (AdMob)</strong> to display banner ads, native store ads, interstitial ads between games, and optional rewarded video ads (such as doubling the daily gift or reviving with an extra life).</p>
+      <ul>
+        <li>The Google AdMob SDK may automatically process standard technical identifiers (such as the Android Advertising ID, diagnostic data, and ad interactions) for ad delivery and fraud prevention.</li>
+        <li>Users can reset or delete their Advertising ID at any time via <strong>Android Settings → Google → Ads</strong>.</li>
+        <li>Learn more in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      </ul>
+
+      <h2>6. Children's Privacy</h2>
+      <p>Snake Evolution is suitable for general audiences and does not knowingly collect personal data from children under 13 (or any other age). Parents or guardians with any questions may contact us directly at our support email.</p>
+
+      <h2>7. User Control & Data Deletion</h2>
+      <ul>
+        <li>You can toggle sound effects, music, vibration, and language at any time from the in-game <strong>Settings</strong> screen.</li>
+        <li>You can permanently delete all locally stored progress by uninstalling the app or via <strong>Android Settings → Apps → Snake Evolution → Storage → Clear Data</strong>.</li>
+      </ul>
+
+      <h2>8. Contact Us</h2>
+      <div class="callout">
+        <strong>Ponce App Studios</strong><br>
+        📧 Support Email: <a href="mailto:ponceappstudios@gmail.com">ponceappstudios@gmail.com</a><br>
+        📦 Package ID: <code>com.poncestudios.culebrita</code><br>
+        📍 Lima, Peru
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 Ponce App Studios. Todos los derechos reservados / All rights reserved. | Snake Evolution (<code>com.poncestudios.culebrita</code>)
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      const es = document.getElementById('content-es');
+      const en = document.getElementById('content-en');
+      const btnEs = document.getElementById('btn-es');
+      const btnEn = document.getElementById('btn-en');
+      const sub = document.getElementById('header-sub');
+      if (lang === 'en') {
+        es.classList.add('hidden');
+        en.classList.remove('hidden');
+        btnEn.classList.add('active');
+        btnEs.classList.remove('active');
+        sub.textContent = 'Data transparency and privacy protection for Google Play Store';
+      } else {
+        en.classList.add('hidden');
+        es.classList.remove('hidden');
+        btnEs.classList.add('active');
+        btnEn.classList.remove('active');
+        sub.textContent = 'Transparencia y protección de datos para Google Play Store';
+      }
+    }
+  </script>
+</body>
+</html>
